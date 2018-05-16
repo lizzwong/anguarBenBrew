@@ -1,3 +1,25 @@
 <div ng-include="'views/partials/nav.html'"></div>
 
 <h1>BEN INGREDIENTS</h1>
+
+<div>
+    <h3>Grain</h3>
+    <input type="text" ng-model="vm.ingredient.grain.name" placeholder="Name">
+    <input type="text" ng-model="vm.ingredient.grain.color" placeholder="Color">
+    <button ng-click="vm.addIngredient(vm.ingredient.grain)">Add</button>
+</div>
+
+<div>
+    <h3>Hops</h3>
+    <input type="text" ng-model="vm.ingredient.hops.variety" placeholder="Variety">
+    <input type="text" ng-model="vm.ingredient.hops.aa" placeholder="AA%">
+    
+    <button ng-click="vm.addIngredient(vm.ingredient.hops)">Add</button>
+</div>
+<div>
+<h3>Yeast</h3>
+<input type="text" ng-model="vm.ingredient.yeast.name" placeholder="Name">
+<button ng-click="vm.addIngredient(vm.ingredient.yeast)">Add</button>
+</div>
+
+
